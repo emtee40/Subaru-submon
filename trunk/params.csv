@@ -1,0 +1,20 @@
+batt volts:Battery Voltage:2:V:7:b*0.08
+vehicle speed:Vehicle Speed:1:mph:8:b*62.0/50.0
+engine speed:Engine Speed:0:r/min:9:b*25.0
+coolant temp:Coolant Temperature:0:%deg% F:000a:(b-50.0)*9.0/5.0+32.0
+ignition adv:Ignition Advance:0:%deg% BTDC:000b:b
+maf voltage:MAF Voltage:2:V:000c:b*5.00/255.0
+engine load %:Engine Load:3: :000d:b*100.0/255.0
+tps voltage:TPS Voltage:2:V:000f:b*5.00/255.0
+inj pulse width:Injector Pulse Width:3:ms:10:b*0.256
+iacv duty:IACV Duty Cycle:0:%:11:b*100.0/255.0
+o2 average:O2 Average:3:V:12:b*5.00/511.0
+o2 minimum:O2 Minimum:3:V:13:b*5.00/255.0
+o2 maximum:O2 Maximum:3:V:14:b*5.00/255.0
+knock corr:Knock Correction:0:%deg%:15:b
+lambda corr:Lambda Correction:0:%:001c:b-128.0
+atm pressure:Atmospheric Pressure:1:hPa:001f:b*101325.0/9500.0
+man pressure:Manifold Relative Pressure:1:hPa:20:(b-128.0)*1000.0/85.0
+injector duty:Injector Duty Cycle:0:%:None:%inj pulse width% * (%engine speed% / 120000.0) * 100.0
+fuel flow:Engine Fuel Flow:3:gal/hr:None:%injector duty% * 4.43809048 / 100.0 * 4.0
+fuel economy:Fuel Economy:2:mpg:None:%vehicle speed% / %fuel flow%
