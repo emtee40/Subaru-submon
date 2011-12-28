@@ -1,0 +1,74 @@
++General
+vehicle speed
+engine speed
+batt volts
+coolant temp
+-
+
++O2
+o2 average
+o2 minimum
+o2 maximum
+knock corr
+-
+
++Sensors
+engine speed
+batt volts
+coolant temp
+maf voltage
+tps voltage
+o2 average
+o2 minimum
+o2 maximum
+atm pressure
+man pressure
+-
+
++Ignition
+vehicle speed
+engine speed
+ignition adv
+knock corr
+-
+
++Fuel Economy
+vehicle speed
+engine speed
+coolant temp
+ignition adv
+engine load
+maf voltage
+tps voltage
+inj pulse width
+injector duty
+fuel flow
+fuel economy
+-
+
++Fuel
+engine speed
+maf voltage
+inj pulse width
+injector duty
+fuel flow
+o2 average
+o2 minimum
+o2 maximum
+lambda corr
+-
+
++Simple
+engine speed
+vehicle speed
+maf voltage
+ignition adv
+tps voltage
+inj pulse width
+injector duty
+fuel flow
+fuel economy
+coolant temp
+lambda corr
+-
+
